@@ -1,6 +1,6 @@
 const API_KEY = 'PUT_YOUR_API_KEY';
 
-const API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent';
+const API_URL = 'https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash:generateContent';
 
 const chatMessages = document.getElementById('chat-messages');
 const userInput = document.getElementById('user-input');
@@ -52,7 +52,7 @@ function addMessage (message, isUser) {
 
     const profileImage = document.createElement('img');
     profileImage.classList.add('profile-image');
-    profileImage.src = isUser?'../assets/images/user.jpg':'../assets/images/bot.webp';
+    profileImage.src = isUser?'../assets/images/user.jpg':'../assets/images/bot.jpg';
     profileImage.alt = isUser?'user':'bot';
 
     const messageContent = document.createElement('div');
